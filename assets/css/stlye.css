@@ -28,7 +28,11 @@
     margin-right: 20px;
     
   }
-  
+   /* Changes the color or navbar when hovered */
+  nav ul li:hover{
+
+    box-shadow: 0 0 10px  #800080;
+  }
   /* Home Section */
   
   .myname {
@@ -68,15 +72,24 @@
     text-align: center;
     margin-bottom: 30px;
   }
-  
+  /* Makes the profile picture round and sets the animation duration and adds shadow circle to the image  */
   .about .profile {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    
-
+    box-shadow: 0 0 0 4px white ;
+    animation: float 2000ms 1 alternate-reverse;
+    transition: 300ms;
   }
-  
+
+/* Moves the profile picture vertically  */
+    @keyframes float {
+      0% {transform:translateY(0)}
+      80%{transform:translateY(80PX)}
+    }
+
+
+
   /* Projects Section */
   
   .projects {
